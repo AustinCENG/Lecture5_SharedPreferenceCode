@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TODO: Usually All the setting options in the setting screen is listed as XML file here.finsihed
+-->
+<resources>
+    <string-array name="Color">
+        <item>Blue</item>
+        <item>Yellow</item>
+        <item>Purple</item>
+        <item>Green</item>
+    </string-array>
+    <!--
+     TODO: ColorNumber is used to indicate the number corresponding to the options above. Blue is 1, Green is 4 finsihed
+ -->
+    <string-array name="ColorNumber">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>
