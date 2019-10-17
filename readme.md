@@ -10,4 +10,4 @@ The code intends to save the following information on a shared preference list f
 
 Note:
 
-Needs to update the class Settingscreen for an update since the API 28 and later won't support PreferenceFragment and getFragmentManager anymore
+Needs to update the class Settingscreen for an update since API 28 and later won't support PreferenceFragment and getFragmentManager anymore
