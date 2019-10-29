@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-
 <!--
     TODO 7.0 Refer to the following website about the setting screens setup. finsihed.
         https://developer.android.com/guide/topics/ui/settings
@@ -10,10 +9,6 @@
         android:key="check_box_preference_1"
         android:summary="This is only week 6 though."
         android:title="Are you tired?" />
-    <RingtonePreference
-        android:defaultValue="0"
-        android:key="ringtone_preference_1"
-        android:title="Ringtone preference" />
     <SwitchPreference
         android:defaultValue="false"
         android:key="switch_preference_1"
