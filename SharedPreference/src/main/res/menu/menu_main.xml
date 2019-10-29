@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_users"
         android:orderInCategory="100"
-        android:title="User Information"
+        android:title="@string/user_information"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_settings"
@@ -15,6 +15,6 @@
     <item
         android:id="@+id/quit"
         android:orderInCategory="100"
-        android:title="Quit"
+        android:title="@string/quit"
         app:showAsAction="never" />
 </menu>

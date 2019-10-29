@@ -21,9 +21,11 @@ public class SettingScreen extends AppCompatActivity {
         setContentView(R.layout.activity_setting_screen);
         // TODO 7.1: Generate and commit a fragment for the setting screen. finsihed.
         // getFragmentManager deprecated from API 28 and needs to be updated later on.
-       getFragmentManager().beginTransaction()
-                .add(R.id.idSetting, new SettingFragment())
-                .commit();  // have to commit to submit the transaction.
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.idSetting, new SettingFragment())
+                .commit();
     }
 
 
@@ -32,11 +34,10 @@ public class SettingScreen extends AppCompatActivity {
     // Please notice that Fragment innerclass must be static
     // TODO 7.2: Generate a PreferenceFragment class to hold all the settings build in setting.xml.finsihed.
     // PreferenceFragment deprecated from API 28 and needs to be updated later on.
-    public static class SettingFragment extends PreferenceFragment{
+    public static class SettingFragment extends PreferenceFragmentCompat {
         @Override
-        public void onCreate(@Nullable Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            addPreferencesFromResource(R.xml.setting);
+        public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+            setPreferencesFromResource(R.xml.setting, rootKey);
         }
     }
 

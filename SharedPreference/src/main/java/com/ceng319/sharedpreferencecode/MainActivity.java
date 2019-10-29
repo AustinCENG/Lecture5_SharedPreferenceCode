@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,16 +118,16 @@ public class MainActivity extends AppCompatActivity {
      */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        // TODO 12: Process the data returned from userscreen. finished.
-        if ((requestCode == USER_SCREEN &&
-                resultCode == RESULT_OK)) {
-            if (data.hasExtra("returned_message")){
-                String mUserName  = data.getExtras().getString("returned_message");
-                Toast.makeText(this,"Welcome to my App, "+ mUserName,Toast.LENGTH_LONG).show();
-                TextView textView = findViewById(R.id.idMessage);
-                textView.setText("Welcome to my App, "+ mUserName);
+            // TODO 12: Process the data returned from userscreen. finished.
+            if ((requestCode == USER_SCREEN &&
+                    resultCode == RESULT_OK)) {
+                if (data.hasExtra("returned_message")){
+                    String mUserName  = data.getExtras().getString("returned_message");
+                    Toast.makeText(this,"Welcome to my App, "+ mUserName,Toast.LENGTH_LONG).show();
+                    TextView textView = findViewById(R.id.idMessage);
+                    textView.setText("Welcome to my App, "+ mUserName);
+                }
             }
-        }
         super.onActivityResult(requestCode, resultCode, data);
     }
 }
